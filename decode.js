@@ -98,7 +98,7 @@ function decode(){
    });
    
    $('.code-blank').each(function(index) {
-      $(this).before("<div><button class='blank' id='" + index + "'><i class='fa fa-play' aria-hidden='true'></i>&nbsp;<small>Run code</small></button><img class='blanker mini' style='display:none; width:20px' id='" + index + "' src='mini-cat.gif' /></div><div style='clear:both'></div>");
+      $(this).before("<div><button class='blank' id='" + index + "'><i class='fa fa-play' aria-hidden='true'></i>&nbsp;<small>Run code</small></button><img class='blanker mini' style='display:none; width:20px' id='" + index + "' src='https://annafergusson.online/smarkdown/mini-cat.gif' /></div><div style='clear:both'></div>");
      $(this).after("<div class='fake'></div>");
      //$(this).after("<div class='check'></div>");
      $(this).after("<div class='code-blank-output'></div>");
