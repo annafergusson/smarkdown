@@ -66,7 +66,8 @@ function encode(){
    
    var editor;
    $('.code-exercise').each(function(index) {
-      $(this).before("<div><button class='org' id='" + index + "'> <i class='fa fa-refresh' aria-hidden='true'></i>&nbsp;<small>Start over</small></button><button class='code' id='" + index + "'><i class='fa fa-play' aria-hidden='true'></i>&nbsp;<small>Run code</small></button><img class='loader mini' style='display:none; width:20px' id='" + index + "' src='mini-cat.gif' /></div><div style='clear:both'></div>")
+      $(this).before("<div><button class='org' id='" + index + "'> <i class='fa fa-refresh' aria-hidden='true'></i>&nbsp;<small>Start over</small></button><button class='code' id='" + index + "'><i class='fa fa-play' aria-hidden='true'></i>&nbsp;<small>Run code</small></button><img class='loader 
+		     ' style='display:none; width:20px' id='" + index + "' src='https://github.com/annafergusson/smarkdown/raw/main/mini-cat.gif' /></div><div style='clear:both'></div>")
      $(this).after("<div class='code-output'></div>");
      //stash original code in data
      var all_code = $(this).text();
