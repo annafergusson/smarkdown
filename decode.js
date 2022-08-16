@@ -5,7 +5,7 @@ function interactive_encode(){
   $('.code-blank select').addClass("gap");
 }
 
-function encode(){
+function decode(){
     // find all the code exercises
    $("p:contains('{sharecode}')").each(function (index) {
        $(this).replaceWith("<div>When you are finished, click this <button id='share_code' class='doc'>Share code</button> button to generate a link to your code.<br /><textarea id='share_link' style='width:100%; display:none;'></textarea></div>");
