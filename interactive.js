@@ -1,5 +1,5 @@
 function progressive() {
-  var html = $(".page").html();
+  var html = $(".marky").html();
   var sections = html.split("<hr>");
   var new_html = [];
   for(var i = 0; i < sections.length; i++)
