@@ -485,7 +485,7 @@ function getCoordNew(event,canvasid){
    $(".reveal").hide();
 	  
 	    //display embedded iframes
-     $("span:contains('</iframe>')").each(function (index) {
+     $("p:contains('</iframe>')").each(function (index) {
         var checkText = $(this).text().trim();
         var ans = checkText.match("<iframe(.*)</iframe>");
         $(this).html(ans[0]);
