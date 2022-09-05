@@ -280,6 +280,17 @@ function getCoordNew(event,canvasid){
     //return {x: tx, y: ty}
 }
 
+  //found old hide stuff in tables approach
+  $("td:contains('{hide}')").each(function (index) {
+			var checkText = $(this).text().trim();
+			checkText = checkText.replace("{hide}", "");
+			$(this).data("answer", checkText);
+			$(this).html("");
+			$(this).attr('contenteditable','true');
+			$(this).addClass("anscheck");
+			$(this).addClass("docactive");
+	  });
+
    
    //find input or select to create
    var check = $("p:contains('{input}'),p:contains('{select}')");
