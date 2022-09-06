@@ -97,3 +97,8 @@ input, select {
 .wrong {
   background-color: #dbaea9 !important;
 }
+
+ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

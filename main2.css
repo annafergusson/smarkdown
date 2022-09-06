@@ -87,6 +87,8 @@ img {
 table {
   max-width: 100% !important;
   width: 100% !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #download{
