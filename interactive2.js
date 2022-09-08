@@ -84,7 +84,7 @@ function interactive() {
    draw = [];
    
    //find cells in html tables with images
-   $("td:contains('{predict}')").each(function (index) {
+   $("td:contains('{predict}'),th:contains('{predict}')").each(function (index) {
        var temp = [];
        $(this).find('img').each(function (index) {
            temp.push($(this).attr("src"));
@@ -281,7 +281,7 @@ function getCoordNew(event,canvasid){
 }
 
   //found old hide stuff in tables approach
-  $("td:contains('{hide}')").each(function (index) {
+  $("td:contains('{hide}'),th:contains('{hide}')").each(function (index) {
 			var checkText = $(this).text().trim();
 			checkText = checkText.replace("{hide}", "");
 			$(this).data("answer", checkText);
@@ -476,7 +476,7 @@ function getCoordNew(event,canvasid){
     //hide reveal paragraphs
     // grab code from 220 for adding own
     
-   $("td:contains('{reveal}')").each(function (index) {
+   $("td:contains('{reveal}'),th:contains('{reveal}')").each(function (index) {
        var checkText = $(this).html().trim();
        var text = checkText.replace("{reveal}","");
        var newInput = "<span class='clickreveal'><span class='click'>Click here to reveal!</span><div class='reveal'>" + text +  "</div></span>";

@@ -91,6 +91,8 @@ table {
   width: 100% !important;
   margin-bottom: 10px;
   margin-top: 10px;
+ margin-right: auto !important;
+  margin-left: 0px !important;
 }
 
 #download{
@@ -99,10 +101,6 @@ table {
   text-align: right;
 }
 
-table {
-  margin-right: auto !important;
-  margin-left: 0px !important;
-}
 
 .menu_page:hover {
   opacity: 0.5 !important;
