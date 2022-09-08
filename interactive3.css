@@ -1,0 +1,104 @@
+.nexty {
+   float:right;
+   overflow: auto;
+   font-size: 12pt;
+}
+
+.section{
+overflow: auto;
+clear:both;
+padding:10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.check{
+background-color:yellow;
+}
+
+.reveal {
+  padding: 5px;
+  background-color:#F0F0F0;
+  margin: 5px;
+  font-size: 1em;
+}
+
+.doc {
+  background-color: #cfe2f3;
+  border: #cfe2f3 solid;
+  border-radius: 4px;
+  color: #000000;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+.prediction, .revealy{
+ overflow: auto;
+ font-size: 12pt;
+ }
+
+.prim {
+  background: blue;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sec {
+  background: gray;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.MCQ  {
+  margin:0 !important;
+  padding:0 !important;
+  margin-bottom: 1em !important;
+  list-style: none !important;
+  margin-right: auto !important;
+  margin-left: -2px !important;
+}
+
+.MCQcheck {
+  border: solid #000000 1px !important; 
+  padding: 5px !important; 
+  margin: 0px !important; 
+  margin-right: auto !important;
+  margin-left: 0px !important;
+  list-style: none !important;
+}
+
+.click{
+  padding: 5px;
+  background-color:#F0F0F0;
+  margin: 5px;
+  font-size: 1em;
+}
+
+.center-align {
+  text-align:center;
+}
+
+input, select {
+  border: solid #000000 1px;
+  padding: 5px;
+}
+
+.correct {
+  background-color: #c1dba9 !important;
+}
+
+.wrong {
+  background-color: #dbaea9 !important;
+}
+
+ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

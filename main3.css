@@ -1,0 +1,292 @@
+body {
+  font-family: 'Inconsolata', monospace !important;
+  font-size: 12pt !important;
+}
+
+h1, h2 {
+  font-family: 'Londrina Solid' !important;
+}
+
+h1 {
+  font-size: 24pt !important;
+  margin: 0px !important;
+}
+
+h2 {
+  color: #00457c !important;
+  font-size: 20pt !important;
+  margin: 0px !important;
+}
+
+h3 {
+  background-color: #00457c !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  padding: 2px 4px 2px 4px !important;
+  margin-bottom: 5px !important;
+  font-size: 14pt !important;
+  margin-top: 0px !important;
+}
+
+h4 {
+  color: #00457c !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.quote {
+  padding: 7px !important;
+  background-color:#F0F0F0 !important;
+  font-size: 1em !important;
+  border: #F0F0F0 solid !important;
+  border-radius: 8px !important;
+}
+
+.quote > li {
+  background-color: #F0F0F0 !important;
+}
+
+.callout {
+  padding: 7px !important;
+  background-color:#cfe2f3 !important;
+  font-size: 1em !important;
+  border: #cfe2f3 solid !important;
+  border-radius: 8px !important;
+}
+
+.outline {
+  padding: 7px !important;
+  background-color:#ffffff !important;
+  font-size: 1em !important;
+  border: #00457c solid !important;
+  border-radius: 8px !important;
+}
+    
+.container {
+  overflow: auto;
+  width: 100%;
+}
+
+.page, .footer {
+  overflow: auto;
+  font-size: 12pt !important;
+  max-width: 800px;
+  margin-right: auto !important;
+  margin-left: 0px !important;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+table {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ margin-right: auto !important;
+  margin-left: 0px !important;
+}
+
+#download{
+  background-color: #F0F0F0;
+  font-size: 12pt;
+  text-align: right;
+}
+
+
+.menu_page:hover {
+  opacity: 0.5 !important;
+  cursor: pointer !important;
+}
+
+.menu_page {
+  background-color: #00457c;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.menu_header {
+  background-color: #F0F0F0;
+  color: #000000;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+ .menu_subheader {
+  background-color: #cfe2f3;
+  color: #000000;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.course_logo img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.course_logo {
+ margin-bottom: 10px;
+ margin-top: 10px;
+}
+
+.sidenav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  width: 260px;
+  overflow-y: scroll;
+}
+
+.main {
+  margin-left: 270px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100% !important;
+  margin-top: 20px;
+  background-color: #F0F0F0;
+  color: #000000;
+  padding: 5px 10px 5px 10px;
+  font-size: 0.8em !important;
+  margin-bottom: 10px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  display:none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f0f0f0;;
+  border-radius: 20px;
+  border: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00457c;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ @media print
+  {
+    #side_menu, #download { display: none; }
+    
+    .main { display: block; 
+            margin:10px; 
+            width:100%;}
+            
+    .main img {
+      width:100%;
+    }
+            
+  
+    .no-break-inside {
+      // apply this class to every component that shouldn't be cut off between to pages of your PDF
+      break-inside: "avoid";
+    }
+  
+    .break-before {
+      // apply this class to every component that should always display on next page
+      break-before: "always";
+    }
+  }
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -25px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 20000;
+}
+
+.spinner > div {
+  background-color: #000000;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
