@@ -66,6 +66,15 @@ p {
   border: #00457c solid !important;
   border-radius: 8px !important;
 }
+
+.tech{
+  padding: 7px !important;
+  background-color:#00457c !important;
+  font-size: 1em !important;
+  border: #00457c solid !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+}
     
 .container {
   overflow: auto;
